@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title> HỌC HTML 3</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style> 
+            h1 {
+                color: red;
+                font-size: 20px;
+            }
+            #First{
+                color: yellow;
+            }
+            .FClass{
+                color: blue;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <div>
+            <h1 id="First" class="FClass">Priority</h1>
+            <ol>
+                <li>Internal, External</li> <!-- Không có sự ưu tiên nào hơn, cái nào ở dưới thì sẽ dc coi là cập nhật mới hơn và dc áp dụng -->
+                <li>Inline - 1000</li>
+                <li>#id - 100</li>
+                <li>.class - 10</li>
+                <li>tag - 1</li>
+                <!-- Cách nào nhiều điểm hơn sẽ dc ưu tiên hơn -->
+                <li>Equal specificity?</li> <!-- Giống nhau về cấp thì ai mới hơn sẽ dc chọn. Cộng dồn điểm vd: #First.FClass > #First vì 110>100 -->
+                <li>Universal selector and inherited - 0?</li> <!--  -->
+            </ol>
+        </div>
+    </body>
+</html>

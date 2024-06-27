@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+  }
+
+body > div {
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer; /* Tạo hình ảnh bàn tay khi con trỏ chuột di vào nút */
+    /* Thời gian chuyển từ bình thường sang mờ tời 0.8 là 0.2s */
+    transition: opacity 0.2s;
+    min-width: 120px;
+}
+
+/* Khi di chuột vào ô button thì sẽ là mờ màu đi 20% */
+.btn:hover{
+    opacity: 0.8;
+}
+
+/* css cho thằng dứng cạnh thằng btn nghĩa là trong th này thì đứa dc css là warn và danger */
+.btn + .btn{
+    margin-left: 16px;
+}
+
+.btn--success{
+    background-color: #66b72c;
+}
+.btn--warn{
+    background-color: #ffae06;
+}
+.btn--danger{
+    background-color: #c14229;
+}
+.btn--disable{
+    opacity: 0.5 !important;
+    cursor: auto;
+}
+
+.btn--size--l{
+padding: 8px 16px;
+}
+.btn--size--m{
+padding: 4px 8px;
+}
+.btn--size--s{
+  padding: 2px 4px;
+}
