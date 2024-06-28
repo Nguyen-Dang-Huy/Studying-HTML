@@ -50,3 +50,36 @@ html, body {
 .form__input{
     flex: 1;
 }
+
+/* Column layout */
+
+.column-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 16px;
+}
+
+.column-form .column-1 {
+    display:inline;
+}
+
+.column-form .column-2 {
+    display:inline;
+}
+
+.column-form .column-3 {
+    display:inline;
+}
+
+.column-form .tittle-1 {
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.column-form .tittle-2 {
+    margin-bottom: 16px;
+}
+
+.column-form .tittle-3 {
+    margin-bottom: 16px;
+}
